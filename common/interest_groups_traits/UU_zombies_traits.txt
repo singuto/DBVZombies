@@ -1,0 +1,38 @@
+ig_trait_zombies_love = {
+	icon = "gfx/interface/icons/ig_trait_icons/patriotic_fervor.dds"
+
+	# type is for display order
+	type = in_government
+
+	min_approval = loyal
+	
+	modifier = {
+		state_mortality_mult  = -0.1	
+	}
+}
+
+ig_trait_zombies_like = {
+	icon = "gfx/interface/icons/ig_trait_icons/veteran_consultation.dds"
+
+	# type is for display order
+	type = happy
+
+	min_approval = happy
+	
+	modifier = {
+		state_mortality_mult  = -0.05
+	}
+}
+
+ig_trait_zombies_hate = {
+	icon = "gfx/interface/icons/ig_trait_icons/materiel_waste.dds"
+
+	# type is for display order
+	type = unhappy
+
+	max_approval = unhappy
+	
+	modifier = {
+		state_mortality_mult  = -0.1
+	}
+}

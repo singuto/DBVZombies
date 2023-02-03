@@ -1,0 +1,19 @@
+DBVZ_zombie_start_date = {
+    default = DBVZ_year_0
+    DBVZ_year_0 = {
+        flag = DBVZ_start_0
+    }
+
+    DBVZ_year_1 = {
+        flag = DBVZ_start_1
+    }
+
+    DBVZ_year_5 = {
+        flag = DBVZ_start_5
+    }
+
+    DBVZ_year_10 = {
+        flag = DBVZ_start_10
+    }
+}
+#Maybe add infection rate and spread rate as options in the future

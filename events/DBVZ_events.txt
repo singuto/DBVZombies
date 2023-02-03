@@ -1,0 +1,91 @@
+#DBVZ_events.1 is the event that informs every country that the plague has started.
+
+DBVZ_events.1 = {
+    type = country_event
+    placement = root
+    title = DBVZ_events.1.t
+    desc = DBVZ_events.1.d
+    flavor = DBVZ_events.1.f
+    icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+    immediate = {
+		
+    }
+
+    trigger = {
+        
+	}
+
+	event_image = {
+        # There are two types of event images: video and texture
+        # video should be a bk2 (Bink Video) file
+		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
+        # Static images are called 'texture' instead
+        # texture should be a dds (DirectDraw Surface) file
+        # texture = "gfx/texture.dds"
+	}
+
+    #on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+    option = {
+		name = DBVZ_events.1.1
+		highlighted_option = yes
+        default = yes
+    }
+
+    option = {
+		name = DBVZ_events.1.2
+		highlighted_option = yes
+    }
+}
+
+#DBVZ_events.2 is the default event that fires if all gamerules are set to default and 
+#should add a modifier to a random county that makes an initial zombie population and 
+#adds the infection.1 modifier. it also should inform the country that it has the plague.
+
+DBVZ_events.2 = {
+    type = country_event
+    placement = root
+    title = DBVZ_events.2.t
+    desc = DBVZ_events.2.d
+    flavor = DBVZ_events.2.f
+    icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+    immediate = {
+		random_state = {
+            limit = {
+                NOT = {
+                    has_modifier={DBVZ_infection.1}
+                    global_var:DBVZ_infection_start={yes}
+                }
+            }
+        }
+    }
+
+    trigger = {
+        
+	}
+
+	event_image = {
+        # There are two types of event images: video and texture
+        # video should be a bk2 (Bink Video) file
+		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
+        # Static images are called 'texture' instead
+        # texture should be a dds (DirectDraw Surface) file
+        # texture = "gfx/texture.dds"
+	}
+
+    #on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+    option = {
+		name = DBVZ_events.2.1
+		highlighted_option = yes
+        default = yes
+    }
+
+#DBVZ_events.3 Plague spread land border
+
+
+#DBVZ_events.4 Plague spread water (trade)

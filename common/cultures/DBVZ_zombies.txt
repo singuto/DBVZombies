@@ -1,0 +1,34 @@
+DBVZ_zombies={
+    color=rgb{ 28  91  45 } # same as religion hopefully
+    religion = DBVZ_zombism
+    traits = { DBVZ_zombophone DBVZ_zombie_heritage } # 
+
+    obsessions = {
+        meat
+    }
+
+    # Loved doing these, if you have more just stuff 'em in there but try to keep the regular names rare
+	male_common_first_names = {
+		Graaagh Aaaagh Graaa Mghaaaa Urghhh Urghson Graaaghson Steven Wraaagaaa Braaaungngh Wraaagaaason Blargh Llaaah Mulargh
+	}
+	female_common_first_names = {
+		Graaagh Aaaagh Graaa Mghaaaa Urghhh Urghson Graaaghson Steven Wraaagaaa Braaaungngh Wraaagaaason Blargh Llaaah Mulargh
+	}
+	noble_last_names = {
+		Smith Wood Flecher Hunter Forrest Boggs
+	}
+	common_last_names = {
+		Smith Wood Flecher Hunter Forrest Boggs
+	}
+	male_regal_first_names = {
+		Graaagh Aaaagh Graaa Mghaaaa Urghhh Urghson Graaaghson Steven Wraaagaaa Braaaungngh Wraaagaaason Blargh Llaaah Mulargh
+	}
+	female_regal_first_names = {
+		Graaagh Aaaagh Graaa Mghaaaa Urghhh Urghson Graaaghson Steven Wraaagaaa Braaaungngh Wraaagaaason Blargh Llaaah Mulargh
+	}
+
+    graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

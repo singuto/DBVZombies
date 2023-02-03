@@ -1,0 +1,103 @@
+ig_zombies = {
+	color = hsv{ 0.09 0.29 0.09 }
+	texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
+	
+	ideologies = {
+		ideology_zombies_protection
+		ideology_zombies_taxation
+		ideology_zombies_army
+	}
+	
+	enable = {
+		always = yes
+	}
+	
+	traits = {
+		ig_trait_zombies_love
+		ig_trait_zombies_like
+		ig_trait_zombies_hate
+	}	
+	
+	on_enable = {}
+	on_disable = {}
+	on_character_ig_membership = {}
+	
+	pop_potential = {
+		OR = {
+            is_pop_type = academics
+            is_pop_type = aristocrats
+            is_pop_type = bureaucrats
+            is_pop_type = capitalists
+            is_pop_type = clergymen
+            is_pop_type = clerks
+            is_pop_type = engineers
+            is_pop_type = farmers
+            is_pop_type = laborers
+            is_pop_type = machinists
+			is_pop_type = officers
+			is_pop_type = peasants
+			is_pop_type = shopkeepers
+			is_pop_type = slaves
+			is_pop_type = soldiers
+		}		
+	}
+	
+	pop_weight = {
+		value = 0
+		
+		add = {
+			desc = "POP_INFECTION"
+			if = {
+				limit = { 
+                    AND = {
+                        has_modifier = UU_infection
+                        OR = {
+                            is_pop_type = academics
+                            is_pop_type = aristocrats
+                            is_pop_type = bureaucrats
+                            is_pop_type = capitalists
+                            is_pop_type = clergymen
+                            is_pop_type = clerks
+                            is_pop_type = engineers
+                            is_pop_type = farmers
+                            is_pop_type = laborers
+                            is_pop_type = machinists
+                            is_pop_type = officers
+                            is_pop_type = peasants
+                            is_pop_type = shopkeepers
+                            is_pop_type = slaves
+                            is_pop_type = soldiers
+                        }
+                    }
+				}
+				value = 100
+			}
+		}
+	}
+	
+	monarch_weight = {
+		value = 0.0
+	}
+	
+	commander_weight = {
+		value = 0.0
+	}
+	
+	noble_chance = {
+		value = 0.0
+	}
+	
+	female_commander_chance = {	
+		value = 0.0
+	}
+	
+	female_politician_chance = {
+		value = 0.0
+	}	
+	
+	# The chance that a commander belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular commander in the IG
+	commander_leader_chance = {
+		value = 0.0
+	}
+}

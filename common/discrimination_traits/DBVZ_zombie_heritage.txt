@@ -1,0 +1,10 @@
+DBVZ_zombie_heritage = {
+    heritage = yes
+}
+
+DBVZ_zombie_religion = {
+    heritage = yes
+}
+
+DBVZ_zombophone = {
+}
